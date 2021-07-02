@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -8,13 +6,6 @@ public class SymbolData : ScriptableObject
 {
     [SerializeField] private int symbolId;
     [SerializeField] private Sprite symbolImage;
-
-    public int SymbolId
-    {
-        get
-        {
-            return symbolId;
-        }
-    }
-
+ 
+    public int SymbolId => symbolId;
 }

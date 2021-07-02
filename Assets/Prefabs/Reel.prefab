@@ -88,6 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4710f34027c8a4aa572d5564994049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  symbolData: {fileID: 0}
+  symbolImage: {fileID: 1141673798014490095}
+  symbolRT: {fileID: 7826989589636494194}
 --- !u!1 &3528661528081101861
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4710f34027c8a4aa572d5564994049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  symbolData: {fileID: 0}
+  symbolImage: {fileID: 3574019360480514602}
+  symbolRT: {fileID: 5457701951941174736}
 --- !u!1 &3866212484249465346
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4710f34027c8a4aa572d5564994049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  symbolData: {fileID: 0}
+  symbolImage: {fileID: 4236763714999476074}
+  symbolRT: {fileID: 154669764630066994}
 --- !u!1 &5409146953456335435
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +380,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f03becc3df6a9a24ab418bb56b45ae29, type: 3}
   - {fileID: 21300000, guid: 3d992524bb8f0494a9a5bdbf053fd91e, type: 3}
   AllReels: {fileID: 0}
+  FinalResult: {fileID: 0}
   symbolHeight: 200
   symbolsCount: 4
 --- !u!1 &6873028963509626478
@@ -651,3 +661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4710f34027c8a4aa572d5564994049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  symbolData: {fileID: 0}
+  symbolImage: {fileID: 6637119205488496340}
+  symbolRT: {fileID: 171628408254502162}

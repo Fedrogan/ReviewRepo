@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.UI;
 
 public class MovingReels : MonoBehaviour
 {
@@ -45,7 +42,10 @@ public class MovingReels : MonoBehaviour
         DOTween.Kill(reel);
         reel.DOAnchorPosY(-(fullDistance+((distanceWay + distanceStart) * symbolHeight * symbolsCount)), timeWay)
             .SetEase(easeWay)
-            .OnComplete(() => MovingSlowDown(reel, index));
+            .OnComplete(() => 
+            {
+                MovingSlowDown(reel, index);
+            });
     }
     public void MovingSlowDown(RectTransform reel, int index)
     {
@@ -70,16 +70,16 @@ public class MovingReels : MonoBehaviour
         }
     }
 
-    //public void MovingStop()
-    //{
-    //    playButton.SetActive(true);
-    //    stopButton.SetActive(false);
-    //    foreach (RectTransform reel in allReels)
-    //    {
-    //        DOTween.Kill(reel);
-    //        MovingSlowDown(reel);
-    //    }
-    //}
+    public void MovingStop()
+    {
+        playButton.SetActive(true);
+        stopButton.SetActive(false);
+        foreach (RectTransform reel in allReels)
+        {
+            DOTween.Kill(reel);
+            MovingSlowDown(reel, 0);
+        }
+    }
 
     public bool SlowDownIsActive
     {
@@ -88,6 +88,4 @@ public class MovingReels : MonoBehaviour
             return slowDownIsActive;
         }
     }
-
-
 }
